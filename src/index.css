@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom EcoWatch Color Utilities */
+:root {
+  --color-primary: #174A35;
+  --color-primary-hover: #236448;
+  --color-leaf: #2F7D4A;
+  --color-fresh: #65B86E;
+  --color-canvas: #F7F9F5;
+  --color-card: #FFFFFF;
+  --color-charcoal: #17201B;
+  --color-secondary-text: #65736A;
+  --color-border: #DCE5DE;
+  --color-light-green: #EAF4EC;
+  --color-warning: #C58A28;
+  --color-danger: #B64242;
+}
+
+/* Leaflet map styling tailored for EcoWatch natural theme */
+.leaflet-tile {
+  filter: saturate(0.85) contrast(102%) brightness(99%);
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 14px !important;
+  border: 1px solid #DCE5DE !important;
+  box-shadow: 0 8px 24px -4px rgba(23, 74, 53, 0.12) !important;
+  padding: 0 !important;
+  background: #FFFFFF !important;
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px !important;
+  line-height: 1.4 !important;
+  color: #17201B !important;
+}
+
+.leaflet-container {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  background-color: #EAF4EC !important;
+}
+
+/* Custom subtle organic background pattern */
+.eco-bg-pattern {
+  background-color: #F7F9F5;
+  background-image: radial-gradient(#DCE5DE 0.75px, transparent 0.75px), radial-gradient(#EAF4EC 0.75px, #F7F9F5 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}

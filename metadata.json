@@ -1,0 +1,10 @@
+{
+  "name": "EcoWatch",
+  "description": "Report. Track. Protect. Environmental issue reporting and tracking platform connecting citizens with institutes and authorities.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
